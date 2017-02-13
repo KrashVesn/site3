@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ball game</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body onLoad="circle()">
+	<ui-view></ui-view>
+	<header class="top_header">
+		<div class="header_topline">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<button class="auth_button hidden-md hidden-lg hidden-sm"><i class="fa fa-user-o" aria-hidden="true"></i></button>
+						<div class="top_links">
+							<a ui-sref="login" class="enter">Вход</a> /
+							<a ui-sref="signup">Регистрация</a>
+						</div>
+						<div class="soc_buttons">
+							<a href="#s_1"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#s_2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo">
+						<a href="#"><h1>Game</br>&nbsp Ball</h1></a>
+					</div>
+					<nav class="main_menu clearfix">
+						<button class="main_menu_button hidden-md hidden-lg hidden-sm"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						<ul class="navig">
+							<li class="active"><a href="#">Главная</a></li>
+							<li><a href="#s_1">Об игре</a></li>
+							<li><a href="#s_2">Статистика</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+						<div class="contact"><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Krashvesn@mail.ru</a></div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content_animate" id="animate">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<canvas class="sphere-animate" id="sphere" width='1140px' height='600px'>
+				</canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main_content">
+		<div class="container">
+			<div class="row">
+				<div class="col md-12">
+					<div class="col-md-6">
+						<section id="s_1">
+							<div class="main_content_sidebar1"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellat, consectetur eligendi necessitatibus reiciendis reprehenderit porro expedita consequuntur vitae dolorem beatae commodi adipisci cupiditate qui quisquam blanditiis praesentium labore enim.</h1>
+							</div>
+						</div>
+						<div class="col md-6">
+							<div class="picture1">
+								<img src="img/slide1.jpg" class="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="main_content">
+		<div class="container">
+			<div class="row">
+				<div class="col md-12">
+					<div class="col-md-6">
+						<section id="s_2">
+							<div class="main_content_sidebar2"><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repellat, consectetur eligendi necessitatibus reiciendis reprehenderit porro expedita consequuntur vitae dolorem beatae commodi adipisci cupiditate qui quisquam blanditiis praesentium labore enim.</h1>
+							</div>
+						</div>
+						<div class="col md-6">
+							<div class="picture2">
+								<img src="img/slide2.jpg" class="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/Font-Awesome-master/css/font-awesome.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common2.js"></script>
+	<script src="js/common3.js"></script>
+
+</body>
+</html>

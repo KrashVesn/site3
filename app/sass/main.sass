@@ -1,0 +1,250 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+ 
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+ 
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+.top_header
+	background: #4AAAD2
+
+.header_topline
+	background-color: #43484C
+	padding: 15px 0
+	color: #fff
+	a
+		color: #fff
+	a:hover 
+		text-decoration: none
+		color: orange
+
+
+.soc_buttons
+	float: right
+	a
+		font-size: 26px
+		margin-left: 8px
+ 
+.top_links
+	float: left
+	margin-top: 10px
+
+.auth_button, .main_menu_button
+	background: transparent
+	border: 0
+	font-size: 26px
+	float: left
+	&:hover
+		color: orange
+	&:before
+		color: #fff
+
+.main_menu_button
+	&:hover
+		transition: all .25s
+		color: #4AAAD2
+		background: #FFA59E
+
+.logo   
+	padding: 15px 0
+	color: #fff
+	font-family: Signalist
+	font-size: 36px
+	text-align: center
+	a
+		color: #fff
+	a:hover
+		color: #FFA500
+		text-decoration: none
+	a:link
+		color: #fff
+		text-decoration: none
+	h1
+		margin: 0
+		padding: 0
+		line-height: 0.6
+		font-weight: normal
+		transform: rotate(-10deg)
+		display: inline-block
+
+.main_menu
+	// position: fixed
+	background: #FFA500
+	color: #fff
+	margin-bottom: 20px 
+	// margin: 10px
+	a
+		color: #fff
+		padding: 10px 
+		display: block
+		font-size: 18px
+	a:hover
+		background: #FFB02E
+		text-decoration: none
+		transition: all 0.25s
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		float: left
+	li
+		display: inline-block
+
+.contact
+	float: right
+	a:hover
+		transition: all .25s
+// 
+
+.modal
+	position: absolute
+	z-index: 9999
+	top: 17%
+	left: 0
+	width: 100%
+	height: 100%
+
+.content
+	width: 550px
+	border: 10px solid #fff
+	margin: 0 auto
+	height: 300px
+
+.close 
+	display: inline-block
+	float: right
+	padding: 10px
+	color: #fff
+	cursor: pointer
+	&:hover
+		color: #FFA500
+
+.modal-header
+	display: block
+	background: #43484C
+	color: #fff
+	h1
+		margin: 0 10px
+
+.modal-content
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	color: #fff
+	float: center
+	width: 70%
+	background: $main-color
+	height: 240px
+	input
+		display: block
+		margin: 5px auto
+		color: black
+	button
+		display: block
+		width: 175px
+		margin: 5px auto
+		margin-top: 20px
+		background: $link-color
+		border-radius: 7px 
+		border: 2px solid #ddd
+	p
+		margin-bottom: 0
+		margin-top: 30px
+	a:hover
+		color: orange
+		text-decoration: none
+		// background: $link-color
+
+.modal-sidebar
+	float: left
+	width: 30%
+	color: #fff
+	text-align: center
+	background: $link-color
+	height: 240px
+	p
+		margin-top: 30px
+
+.vk, .fb, .tw
+	border: 0px
+	border-radius: 5px
+	width: 110px
+	margin: 3px
+	padding: 5px
+	text-align: left
+
+.vk
+	background: #507299
+
+.fb
+	background: #3b5998
+
+.tw
+	background: #0084b4
+
+// content
+
+.picture
+	img
+
+#s_1, #s_2
+	text-align: center
+
+.image
+	height: 300px
+
+.main_content
+	background: orange
+	width: 100%
+	height: 350px
+
+.main_content_sidebar1, .main_content_sidebar2 
+	display: none
+	h1
+		font-size: 26px
+		color: #fff
+
+.picture1, .picture2
+	display: none
+
+.content_animate
+	background: #D0D0D0
+
+.sphere-animate
+	width: 100%
+
+// #animate
+// 	// width: 500px
+// 	// height: 300px
+// 	background: $main-color
+
+@import "media" // Всегда в конце
